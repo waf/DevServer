@@ -5,6 +5,13 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevServer", "DevServer\DevServer.csproj", "{60F8FA24-06B6-4B42-BE40-5770A6BD0B25}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{679977D6-F2A6-40D6-ABD1-44C88AE70AC6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevServer.Tests", "DevServer.Tests\DevServer.Tests.csproj", "{826A8050-6FF1-4DEA-9139-B715A6D42BFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{60F8FA24-06B6-4B42-BE40-5770A6BD0B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F8FA24-06B6-4B42-BE40-5770A6BD0B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F8FA24-06B6-4B42-BE40-5770A6BD0B25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{826A8050-6FF1-4DEA-9139-B715A6D42BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826A8050-6FF1-4DEA-9139-B715A6D42BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826A8050-6FF1-4DEA-9139-B715A6D42BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826A8050-6FF1-4DEA-9139-B715A6D42BFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

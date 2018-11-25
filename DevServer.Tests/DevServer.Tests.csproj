@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="IntegrationTests\WebRoot\fruits\apple.html" />
+    <None Remove="IntegrationTests\WebRoot\fruits\pineapple.html" />
+    <None Remove="IntegrationTests\WebRoot\fruits\tomato.html" />
+    <None Remove="IntegrationTests\WebRoot\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="IntegrationTests\WebRoot\fruits\apple.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IntegrationTests\WebRoot\fruits\pineapple.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IntegrationTests\WebRoot\fruits\tomato.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IntegrationTests\WebRoot\index.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="System.IO.Abstractions" Version="2.1.0.256" />
+    <PackageReference Include="System.IO.Abstractions.TestingHelpers" Version="2.1.0.256" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevServer\DevServer.csproj" />
+  </ItemGroup>
+
+</Project>
